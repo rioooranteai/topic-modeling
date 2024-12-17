@@ -31,16 +31,8 @@ Kurikulum Merdeka merupakan inisiatif besar dalam sistem pendidikan Indonesia ya
 2. **Preprocessing Data**: Membersihkan data (menghapus *stopwords*, emoji, dan data yang tidak relevan).
 3. **Topic Modeling**: Menggunakan BERTopic untuk menemukan dan memvisualisasikan topik.
 4. **Evaluasi Model**: Menggunakan **silhouette score** dan *hyperparameter tuning* untuk meningkatkan akurasi model.
-5. **Dashboard Visualisasi**: Menyediakan visualisasi hasil clustering menggunakan **Power BI**.
 
-### **4.2 Non-Functional Requirements**
-
-1. **Performa**: Proses clustering harus selesai dalam waktu yang wajar, dengan target p99 latency < 2 menit untuk analisis kumpulan data besar.
-2. **Biaya**: Mengoptimalkan penggunaan sumber daya untuk mengurangi biaya pemrosesan cloud (GCP Cloud Run).
-3. **Keamanan**: Data harus diolah sesuai kebijakan privasi (data publik dari Twitter).
-4. **Skalabilitas**: Sistem harus dapat menangani peningkatan jumlah data (hingga 50.000 tweet).
-
-### **4.3 Constraints**
+### **4.2 Constraints**
 
 - **Teknis**: Penggunaan algoritma clustering seperti HDBSCAN, KMeans, atau Agglomerative sesuai dengan performa terbaik setelah *hyperparameter tuning*.
 - **Waktu Pemrosesan**: Batas pemrosesan data maksimal 5 menit.
@@ -50,7 +42,6 @@ Kurikulum Merdeka merupakan inisiatif besar dalam sistem pendidikan Indonesia ya
 
 - **In-Scope**:  
   - Analisis topik dari data Twitter.  
-  - Visualisasi hasil menggunakan Power BI.  
   - *Hyperparameter tuning* untuk BERTopic.  
 
 - **Out-of-Scope**:  
