@@ -71,16 +71,15 @@ Masalah ini diformulasikan sebagai **unsupervised learning problem** menggunakan
 1. **Embedding Methods**:  
    - **SBERT**  
    - **IndoBERT**  
-   - Evaluasi performa embedding dengan *hyperparameter tuning* menggunakan **Optuna**.
 
 2. **Clustering Algorithms**:  
    - **HDBSCAN**  
    - **KMeans**  
    - **Agglomerative Clustering**  
    - Pemilihan algoritma terbaik berdasarkan **silhouette score**.
+   - Evaluasi performa embedding dengan *hyperparameter tuning* menggunakan **Optuna**.
 
 3. **Dimensionality Reduction**:  
    - **UMAP**  
    - **PCA**  
-   - **t-SNE**  
    - Menggunakan Optuna untuk *hyperparameter tuning*.
